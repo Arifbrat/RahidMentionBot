@@ -127,22 +127,22 @@ async def start(event):
 # gece kusu
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):	
-    await event.edit(f"**[Rahid_Tag_Bot](http://t.me/Rahid_Tag_Bot)-un '📚 Əmrlər' bölməsi ⤵**\n\n\n•━━━━━━━━•••━━━━━━━━•\n**🤖➪ /tag - 5-li tağ edər**\n**🤖➪ /etag - Emoji ilə tağ edər**\n**🤖➪ /stag - Sözlər ilə tağ edər**\n**🤖➪ /tektag - Tək-Tək tağ edər**\n**🤖➪ /usta - Usta tağ botuna aid tağ edər**\n**🤖➪ /admins - Adminləri tağ edər**\n**🤖➪ /cancel - Tağı dayandırar**\n•━━━━━━━━•••━━━━━━━━•", buttons=(
+    await event.edit(f"**Botun Əmrləri**\n\n**/tag - 5-Li Tağ Edər**\n**/etag - Emoji İlə Tağ Edər**\n**/stag - Sözlər İlə Tağ Edər**\n**/tektag - Tək-Tək Tağ Edər**\n**/usta - Usta Tağ Botuna Aid Tağ Edər**\n**/admins - Adminləri Tağ Edər**\n**/cancel - Tağı Dayandırar**", buttons=(
 	            # [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/UstaTagbot?startgroup=a')],
 		     #[Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
-	             [Button.url('🌐 Digər Botlar','https://t.me/Rahid_44'),
-                      Button.url('❤️ Kanalım','https://t.me/qruzdaa')],
-	             [Button.inline(f"🔙 Geri", data="start")]
+	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
+                      Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
+	             [Button.inline(f"🔙Geri", data="start")]
                     ),
                     link_preview=False)
 
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):	
-    await event.edit(f"**📌 [Rahid_Tag_Bot](http://t.me/Rahid_Tag_Bot)-un təkliflər üçün sahiblə əlaqə saxlaya bilərsiniz...**", buttons=(
-		     [Button.url('🙇🏻 Sahib','https://t.me/Rahid_2003')],
-	             [Button.url('🌐 Digər Botlar','https://t.me/Rahid_44'),
-                      Button.url('❤️ Kanalım','https://t.me/qruzdaa')],
-	             [Button.inline(f"🔙 Geri", data="start")]
+    await event.edit(f"**📢Təkliflər Üçün Sahiblə Əlaqə Saxlaya Bilərsiniz...**", buttons=(
+		     [Button.url('🙇🏻Sahib','https://t.me/Rahid_2003')],
+	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
+                      Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
+	             [Button.inline(f"🔙Geri", data="start")]
                     ),
                     link_preview=False)
 
@@ -156,10 +156,10 @@ async def handler(event):
 #  helptext = "** [Memories Tagger Bot](http://t.me/MemoriesTaggerBot)-un Kömək Əmrlər Bunlardır...💭,⤵**\n\n**🤖➪ /tag <səbəb> - 5-li Tag Atışları.**\n**🤖➪ /etag <səbəb> - Emoji ilə etiketlər.**\n**🤖➪ /stag <səbəb> - Söz'lü Tag etiketlər.**\n**🤖➪ /tektag <səbəb> - Üzvləri Tək-Tək etiketlər.**\n**🤖➪ /usta <səbəb> - usta Tag Bot'una aid Tag etiketlər.**\n**🤖➪ /admins <səbəb> - İdarəçilər Tək-Tək etiketlər.**\n**🤖➪ /cancel - Tag Ələməyi Dayandır.**\n**🤖➪ /start - Botu işə salır**\n**🤖➪ /reklam - Reklam və ya əməkdaşlıq üçün bu əmrdən istifadə edin.**"
 #  await event.reply(helptext,
 #                    buttons=(
-#                      [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/UstaTagbot?startgroup=a')],
+#                      [Button.url('➕Məni Qrupa Əlavə Et➕','http://t.me/UstaTagbot?startgroup=a')],
 #                      #[Button.url('Qurup🛠', 'https://t.me/kohne_mekan')],
 #                     # [Button.url('Kanal📢', 'https://t.me/kohne_mekan_kanal')],
-#		      [Button.url('🎉 Sahib', 'https://t.me/Cafarva_064'),
+#		      [Button.url('👨‍💻Sahib', 'https://t.me/Cafarva_064'),
 #                       Button.url('🤖 LUCİFER BOTS ', 'https://t.me/LuciferProje')],
 #		      [Button.inline("◀️ Geri", data="start")],
 #                     # [Button.url('➕ K.M Music Bot ➕','http://t.me/KohneMekanMusicBot?startgroup=a')],
