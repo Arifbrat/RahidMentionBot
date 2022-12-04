@@ -139,7 +139,7 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):	
     await event.edit(f"**📢Təkliflər Üçün Sahiblə Əlaqə Saxlaya Bilərsiniz...**", buttons=(
-		     [Button.url('🙇🏻Sahib','https://t.me/Rahid_2003')],
+		     [Button.url('🙇🏻Sahib','https://t.me/B9SSD7')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
                       Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
 	             [Button.inline(f"🔙Geri", data="start")]
