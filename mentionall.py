@@ -83,15 +83,15 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.reply(f"**👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁 Ətraflı məlumat üçün '📚 Əmrlər' bölməsinə daxil olun**", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/Rahid_Tag_Bot?startgroup=a')],
+     await event.reply(f"**👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁 Ətraflı məlumat üçün '⚡ Əmrlər' bölməsinə daxil olun**", buttons=(
+                     [Button.url('➕Qrupa Əlavə Et➕','http://t.me/secrettaggerbot?startgroup=a')],
 		   # [Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	            # [Button.url('Qurup🛠', 'https://t.me/Bizim_Paytaxt'),
                     #  Button.url('💡 USTA Bots', 'https://t.me/ustabots')],
-	             [Button.inline(f"📚 Əmrlər", data="help"),
-	              Button.inline(f"📑 Təkliflər", data="reklam")],
-	             [Button.url('🌐 Digər Botlar','https://t.me/Rahid_44'),
-                      Button.url('❤️ Kanalım', 'http://t.me/qruzdaa')],
+	             [Button.inline(f"⚡Əmrlər", data="help"),
+	              Button.inline(f"📑Təkliflər", data="reklam")],
+	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
+                      Button.url('🆘Kömək', 'http://t.me/bossbotsazhelp')],
                     ),
                     link_preview=False)
 
