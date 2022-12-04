@@ -97,10 +97,10 @@ async def start(event):
 
 
   if event.is_group:
-    return await client.send_message(event.chat_id, f"**[Rahid_Tag_Bot](http://t.me/Rahid_Tag_Bot)'un əmrlər üçün?.Bot'a daxil olub**", buttons=(
-                     [Button.url('💡 Bota Keç','https://t.me/Rahid_Tag_Bot?start=start')],
-	             [Button.url('🌐 Digər Botlar','https://t.me/Rahid_44'),
-		      Button.url('❤️ Kanalım','https://t.me/qruzdaa')],
+    return await client.send_message(event.chat_id, f"**Əmrlər üçün bota şəxsidən start yazin**", buttons=(
+                     [Button.url('💡Bota Keç','https://t.me/secrettaggerbot?start=start')],
+	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
+		      Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
                     ),
                     link_preview=False)
 #https://t.me/Ustamusicbot?start=help
