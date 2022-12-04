@@ -13,4 +13,4 @@ class Config():
     SUDO_USERS = os.environ.get("SUDO_USERS", "5531642054").split()
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "bossbotsazhelp")
     OWNER_ID = int(os.environ.get("OWNER_ID", "5531642054"))
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "@B9SSD7")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "B9SSD7")
