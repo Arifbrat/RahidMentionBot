@@ -16,6 +16,10 @@ RUN apt-get -qq install -y \
     opus-tools
 
 RUN pip install telethon
-RUN pip3 install requirements.txt
+RUN pip install cryptg
+RUN pip install requests 
+RUN pip install pyrogram==1.3.6
+RUN pip install tgcrypto
+
 RUN chmod a+x start
 CMD ["./start"]
