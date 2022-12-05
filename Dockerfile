@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update -y && apt-get -qq upgrade -y
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip -y
-RUN pkg install python -y
+RUN apt install python -y
 RUN pip3 install -U pip
 RUN apt-get -qq install -y \
     git \
