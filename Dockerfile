@@ -15,6 +15,7 @@ RUN apt-get -qq install -y \
     ffmpeg \
     opus-tools
 
+RUN pip install telethon
 RUN pip3 install requirements.txt
 RUN chmod a+x start
 CMD ["./start"]
