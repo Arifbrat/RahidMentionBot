@@ -1,3 +1,4 @@
+FROM nikolaik/python-nodejs:python3.9-nodejs18
 FROM debian:latest
 FROM python:3.9.6-slim-buster
 ENV LANG C.UTF-8
