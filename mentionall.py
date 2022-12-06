@@ -107,7 +107,7 @@ async def start(event):
 
 #{message.from_user.mention}
 # Başlanğıc Button
-@client.on(events.NewMessage(pattern="^start$"))
+@client.on(events.callbackquery.CallbackQuery(data="start"))
 async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
