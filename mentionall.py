@@ -107,12 +107,9 @@ async def start(event):
 
 #{message.from_user.mention}
 # Başlanğıc Button
-@client.on(events.callbackquery.CallbackQuery(data="start"))
-async def start(event):
-  if event.is_private:
-    async for usr in client.iter_participants(event.chat_id):
-     ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.reply(f"**👋Salam Mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n✅Botun İstifadə Qaydasını Öyrənmək Üçün /help Yazın**", buttons=(
+@@client.on(events.callbackquery.CallbackQuery(data="start"))
+async def handler(event):	
+    await event.edit(f"**👋Salam Mən Qrupdakı Bütün Üzvləri Tağ Edə Bilərəm\n\n✅Botun İstifadə Qaydasını Öyrənmək Üçün /help Yazın**", buttons=(
                      [Button.url('➕Qrupa Əlavə Et➕','http://t.me/secrettaggerbot?startgroup=a')],
 		   # [Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	            # [Button.url('Qurup🛠', 'https://t.me/Bizim_Paytaxt'),
