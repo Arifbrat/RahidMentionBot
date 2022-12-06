@@ -107,7 +107,7 @@ async def start(event):
 
 #{message.from_user.mention}
 # Başlanğıc Button
-@@client.on(events.callbackquery.CallbackQuery(data="start"))
+@client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):	
     await event.edit(f"**👋Salam Mən Qrupdakı Bütün Üzvləri Tağ Edə Bilərəm\n\n✅Botun İstifadə Qaydasını Öyrənmək Üçün /help Yazın**", buttons=(
                      [Button.url('➕Qrupa Əlavə Et➕','http://t.me/secrettaggerbot?startgroup=a')],
