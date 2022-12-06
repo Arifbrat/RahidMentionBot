@@ -132,7 +132,6 @@ async def handler(event):
 		     #[Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
                       Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
-	             [Button.inline(f"🔙Geri", data="start")]
                     ),
                     link_preview=False)
 
@@ -142,7 +141,6 @@ async def handler(event):
 		     [Button.url('🙇🏻Sahib','https://t.me/B9SSD7')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
                       Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
-	             [Button.inline(f"🔙Geri", data="start")]
                     ),
                     link_preview=False)
 
