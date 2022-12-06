@@ -1,25 +1,9 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
-FROM debian:latest
-FROM python:3.9.6-slim-buster
-ENV LANG C.UTF-8
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get -qq update -y && apt-get -qq upgrade -y
+FROM nikolaik/python-nodejs:python3.10-nodejs17
 RUN apt update && apt upgrade -y
-RUN apt install git curl python3-pip -y
-RUN apt install python -y
-RUN pip3 install -U pip
-RUN apt-get -qq install -y \
-    git \
-    curl \
-    wget \
-    ffmpeg \
-    opus-tools
-
-RUN pip install telethon
-RUN pip install cryptg
-RUN pip install requests 
-RUN pip install pyrogram==1.3.6
-RUN pip install tgcrypto
-
-RUN chmod a+x start
-CMD ["./start"]
+RUN apt install ffmpeg -y
+COPY . /app
+WORKDIR /app
+RUN chmod 777 /app
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir -U -r requirements.txt
+CMD ["python3", ""]
