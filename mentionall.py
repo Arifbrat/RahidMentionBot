@@ -158,7 +158,6 @@ async def help(event):
 		     #[Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
                       Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
-	             [Button.inline(f"🔙Geri", data="start")]
                     ),
                     link_preview=False)	
 	
