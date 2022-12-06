@@ -202,7 +202,14 @@ async def mentionall(event):
     return await event.respond("**Başlamaq üçün heç bir səbəb yoxdur! **")
   else:
     return await event.respond("**Tag'a başlamaq üçün səbəb yazın...!**")
-  
+    if mode == "text_on_cmd":
+    await client.send_message(event.chat_id, "❄️ User tağ prosesi başladı\n⏱️ İnterval - 2 saniyə",
+                    buttons=(
+                      [
+                      Button.url('Ən gözəl kanalım😍❤️', f'https://t.me/qruzdaa')
+                      ]
+                    )
+                  ) 
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
     usrnum = 0
