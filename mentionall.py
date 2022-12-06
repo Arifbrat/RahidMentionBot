@@ -83,7 +83,7 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.reply(f"**👋 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm😇\n\n💁 Ətraflı məlumat üçün '⚡ Əmrlər' bölməsinə daxil olun**", buttons=(
+     await event.reply(f"**👋Salam Mən Qrupdakı Bütün Üzvləri Tağ Edə Bilərəm\n\n✅Botun İstifadə Qaydasını Öyrənmək Üçün /help Yazın**", buttons=(
                      [Button.url('➕Qrupa Əlavə Et➕','http://t.me/secrettaggerbot?startgroup=a')],
 		   # [Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	            # [Button.url('Qurup🛠', 'https://t.me/Bizim_Paytaxt'),
@@ -152,8 +152,11 @@ async def handler(event):
 
 #@client.on(events.callbackquery.CallbackQuery(data="help"))	
 @client.on(events.NewMessage(pattern="^/help$"))
-async def handler(event):	
-    await event.edit(f"**⚡Botun Əmrləri**\n\n**/tag - 5-Li Tağ Edər**\n**/etag - Emoji İlə Tağ Edər**\n**/stag - Sözlər İlə Tağ Edər**\n**/tektag - Tək-Tək Tağ Edər**\n**/usta - Usta Tağ Botuna Aid Tağ Edər**\n**/admins - Adminləri Tağ Edər**\n**/cancel - Tağı Dayandırar**", buttons=(
+async def help(event):
+  if event.is_private:
+    async for usr in client.iter_participants(event.chat_id):
+     ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
+     await event.reply(f"**⚡Botun Əmrləri**\n\n**/tag - 5-Li Tağ Edər**\n**/etag - Emoji İlə Tağ Edər**\n**/stag - Sözlər İlə Tağ Edər**\n**/tektag - Tək-Tək Tağ Edər**\n**/usta - Usta Tağ Botuna Aid Tağ Edər**\n**/admins - Adminləri Tağ Edər**\n**/cancel - Tağı Dayandırar**", buttons=(
 	            # [Button.url('➕ Məni Qrupa əlavə et ➕','http://t.me/UstaTagbot?startgroup=a')],
 		     #[Button.url('🎉 Sahib', 'https://t.me/Nehmedov')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
