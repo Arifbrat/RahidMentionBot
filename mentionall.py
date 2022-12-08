@@ -202,6 +202,7 @@ async def mentionall(event):
     return await event.respond("**Başlamaq üçün heç bir səbəb yoxdur! **")
   else:
     return await event.respond("**Tag'a başlamaq üçün səbəb yazın...!**")
+   
     if mode == "text_on_cmd":
     await event.send_message(event.chat_id, "❄️ User tağ prosesi başladı\n⏱️ İnterval - 2 saniyə",
                     buttons=(
