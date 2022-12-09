@@ -98,7 +98,7 @@ async def start(event):
 
   if event.is_group:
     return await client.send_message(event.chat_id, f"**Əmrlər üçün bota şəxsidən start yazin**", buttons=(
-                     [Button.url('💡Bota Keç','https://t.me/secrettaggerbot?start=start')],
+                     [Button.url('💡Bota Keç','https://t.me/secrettaggerbot?start')],
 	             [Button.url('🌐Digər Botlar','https://t.me/bossbotsaz'),
 		      Button.url('🆘Kömək','https://t.me/bossbotsazhelp')],
                     ),
@@ -211,7 +211,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.reply("**Tag əməliyyatı uğurla dayandırıldı!**")
+        await event.respond("**Tag əməliyyatı uğurla dayandırıldı!**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -229,7 +229,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.reply("**Tag əməliyyatı uğurla dayandırıldı!**")
+        await event.respond("**Tag əməliyyatı uğurla dayandırıldı!**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
