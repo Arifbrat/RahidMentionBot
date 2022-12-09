@@ -553,7 +553,7 @@ async def mentionall(tagadmin):
 			break
 		a_+=5
 		await tagadmin.client.send_message(tagadmin.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
-		sleep(0.5)
+		sleep(5)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
